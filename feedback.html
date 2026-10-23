@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Student Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>All Feedback</h2>
+    <a href="/">Back to Home</a>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Student Reviews</h1>
+      <p class="subtitle">
+        See what students have shared with us.
+      </p>
+
+      <p id="listMessage" role="status" aria-live="polite">
+        Loading feedback...
+      </p>
+
+      <div id="feedbackList" class="feedback-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Student Feedback Manager &copy; 2026</p>
+  </footer>
+
+  <script src="feedback.js"></script>
+</body>
+</html>
