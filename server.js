@@ -87,14 +87,8 @@ async function startServer() {
     });
   } catch (error) {
     console.error("Server startup error:", error.message);
-    console.error("Reason:", error.reason?.toString());
-    console.error("URI host:", process.env.MONGODB_URI?.split("@")[1]?.split("/")[0]);
     process.exit(1);
   }
-  // catch (error) {
-  //   console.error("Server startup error:", error.message);
-  //   process.exit(1);
-  // }
 
 
 }
